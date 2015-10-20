@@ -5,6 +5,7 @@ class TaskManager < Sinatra::Base
   end
 
   get '/users' do
+    @statuses = Status.all
     @users = User.all
     erb :users_index
   end
