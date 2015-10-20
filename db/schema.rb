@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20151020014031) do
 
   create_table "statuses", force: :cascade do |t|
-    t.text "name"
+    t.string "name"
   end
 
   create_table "tasks", force: :cascade do |t|
